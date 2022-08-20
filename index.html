@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add contact</title>
+   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+   <div class="container">
+      <h2 class="text-center mt-3">Kontaktga qo'shish</h2>
+      <div class="row mt-5">
+         <div class="col-6 mx-auto">
+            <form class="site-form w-50 ms-5" autocomplete="off">
+               <div class="mb-3">
+                 <label class="form-label" for="exampleInputName">Ismi</label>
+                 <input class="name-input form-control" type="text" id="exampleInputName" aria-describedby="emailHelp">
+               </div>
+
+               <div class="mb-3">
+                 <label for="exampleInputLastName" class="form-label">Familiyasi</label>
+                 <input class="last-input form-control" type="text" id="exampleInputLastName" aria-describedby="emailHelp">
+               </div>
+
+               <div class="mb-3">
+                 <label for="exampleInputEmail1Kinship" class="form-label">Sizga kim bo'ladi?</label>
+                 <input class="kinship-input form-control" type="text" id="exampleInputEmail1Kinship" aria-describedby="emailHelp">
+               </div>
+
+               <div class="mb-3">
+                 <label for="exampleInputNumber" class="form-label">Telefon raqami</label>
+                 <input class="num-input form-control" type="number" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="+998901234567">
+               </div>
+              
+               <button type="submit" class="btn btn-primary">Submit</button>
+               <button type="reset" class="btn btn-danger">Reset</button>
+             </form>
+         </div>
+         <div class="col-6">
+            <ul class="list list-unstyled list-group fs-5 mt-3 ">
+
+            </ul>
+         </div>
+      </div>
+   </div>
+
+
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="./js/script.js">
+   </script>
+</body>
+</html>
