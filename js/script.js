@@ -18,23 +18,22 @@ elSiteForm.addEventListener("submit", function (evt) {
 
 	for (let i = 0; i < array.length; i++) {
 		let elItem = document.createElement("li");
-		let elLastItem = document.createElement("li");
-		let elKinshipItem = document.createElement("li");
-		let elNumItem = document.createElement("li");
 
 		elItem.className = "list-group-item active mb-1";
-		elLastItem.className = "list-group-item active mb-1";
-		elKinshipItem.className = "list-group-item active mb-1";
-		elNumItem.className = "list-group-item active mb-1";
 
-		elItem.textContent = "Ismi:" + " " + array[i].name;
-		elLastItem.textContent = "Familiyasi:" + " " + array[i].lastName;
-		elKinshipItem.textContent = "Kim bo'lishi:" + " " + array[i].kinship;
-		elNumItem.textContent = "Telefon raqami:" + " " + array[i].phoneNumber;
+		elItem.textContent =
+			array[i].name +
+			" " +
+			array[i].lastName +
+			" " +
+			"Kim bo'lishi:" +
+			" " +
+			array[i].kinship +
+			" " +
+			"Raqami:" +
+			" " +
+			array[i].phoneNumber;
 
 		elSiteList.appendChild(elItem);
-		elSiteList.appendChild(elLastItem);
-		elSiteList.appendChild(elKinshipItem);
-		elSiteList.appendChild(elNumItem);
 	}
 });
