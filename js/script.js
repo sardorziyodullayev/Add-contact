@@ -38,5 +38,5 @@ elSiteForm.addEventListener("submit", function (evt) {
 		elSiteList.appendChild(elItem);
 	}
 
-	let local = localStorage.setItem("kontaktlar", JSON.stringify(array));
+localStorage.setItem("kontaktlar", JSON.stringify(array));
 });
