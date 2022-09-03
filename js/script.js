@@ -9,6 +9,7 @@ elSiteForm.addEventListener("submit", function (evt) {
 	evt.preventDefault();
 
 	let array = [];
+
 	array.push({
 		name: elNameInput.value,
 		lastName: elLastNameInput.value,
@@ -36,4 +37,6 @@ elSiteForm.addEventListener("submit", function (evt) {
 
 		elSiteList.appendChild(elItem);
 	}
+
+	let local = localStorage.setItem("kontaktlar", JSON.stringify(array));
 });
